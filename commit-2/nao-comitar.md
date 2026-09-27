@@ -1,11 +1,20 @@
 # Commit 2 — mensagem de commit sugerida
 
-Mensagem sugerida:
+## Mensagem sugerida para o Git:
 
-feat: preparar pipeline de dados e métricas do histórico de serviços
+```
+feat: implementar tipos, enums e regras de negócio da camada domain
 
 Resumo:
-- normaliza datas e remove duplicidades reais da base de ordens de serviço;
-- estrutura o split temporal de treino e teste para o modelo;
-- calcula métricas de score e de VIN Share para apoiar a visão operacional;
-- deixa a base pronta para a geração de leads e a análise de risco.
+- define tipos e interfaces de todos os recursos (Lead, VinShareFiltros, CompetenciaInfo);
+- cria lógica pura de classificação de risco (severidade: baixo/médio/alto);
+- padroniza cálculo de competência (mês) para filtros e visualização;
+- todos os tipos são testados com 100% de cobertura.
+```
+
+## Comando para fazer o commit:
+
+```bash
+git add commit-2/
+git commit -m "feat: implementar tipos, enums e regras de negócio da camada domain"
+```

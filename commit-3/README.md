@@ -1,11 +1,23 @@
-# Commit 3 — modelo preditivo e geração de leads
+# Commit 3 — Camada de aplicação (hooks e contexto de filtros)
 
-Arquivos incluídos:
-- backend/src/application/build_vehicle_features.py
-- backend/src/application/anomaly_detection.py
-- backend/src/application/generate_leads.py
+## Objetivo
+Implementar os hooks de dados reutilizáveis (useLeads, useVinShareData, useTrendData, etc.) e o contexto React para compartilhar filtros entre telas.
 
-Objetivo:
-- construir features por VIN;
-- detectar anomalias e padrões de risco;
-- gerar a lista priorizada de leads para a rede Ford.
+## Arquivos que entram aqui
+- `src/application/` — pasta com todos os hooks
+  - `useLeads.ts` — buscar leads com filtro
+  - `useVinShareData.ts` — dados de VIN Share para KPI
+  - `useTrendData.ts` — histórico mensal de VIN Share
+  - `useAnomaliesData.ts` — detectar anomalias
+  - `useCatalogo.ts` — modelos, concessionárias, período disponível
+  - E mais...
+- `src/infrastructure/mockData.ts` — gerador de dados determinístico
+- Testes dos hooks
+
+## O que faz
+Cada hook é uma abstração entre a data source (mockData) e os componentes React, garantindo que a lógica seja testável e reutilizável.
+
+## Exemplo
+```typescript
+const { data, loading, error } = useLeads({ concessionaria: 'SP-001' });
+```

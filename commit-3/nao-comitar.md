@@ -1,11 +1,20 @@
 # Commit 3 — mensagem de commit sugerida
 
-Mensagem sugerida:
+## Mensagem sugerida para o Git:
 
-feat: construir features de risco, detectar anomalias e gerar leads priorizados
+```
+feat: implementar hooks de dados e gerador mockado da aplicação
 
 Resumo:
-- calcula gap relativo e features por veículo;
-- detecta padrões fora do normal no histórico e no VIN Share;
-- transforma o score em leads priorizados para a concessionária;
-- conecta a inteligência analítica com a ação comercial.
+- cria hooks reutilizáveis para cada recurso (useLeads, useVinShareData, etc.);
+- implementa gerador de dados determinístico em mockData.ts (calibrado com números reais);
+- define contexto React para compartilhar filtros entre telas;
+- todos os hooks incluem loading, error e retry.
+```
+
+## Comando para fazer o commit:
+
+```bash
+git add commit-3/
+git commit -m "feat: implementar hooks de dados e gerador mockado da aplicação"
+```

@@ -1,11 +1,21 @@
 # Commit 4 — mensagem de commit sugerida
 
-Mensagem sugerida:
+## Mensagem sugerida para o Git:
 
-feat: entregar dashboard interactivo com KPI, filtros e leads priorizados
+```
+feat: entregar interface mobile completa com telas, componentes e roteamento
 
 Resumo:
-- monta a experiência principal do painel de operação;
-- conecta filtros, KPIs, tendência e ranking de risco;
-- apresenta leads priorizados em formato amigável para a concessionária;
-- fecha a jornada do projeto com uma interface que traduz o valor analítico em ação.
+- implementa 5 telas principais (painel, tendência, anomalias, leads, filtros);
+- cria componentes reutilizáveis (Card, KpiCard, LeadsTable, TrendChart);
+- define tema e design system (cores, tipografia, espaçamento);
+- configura Expo Router com navegação por abas + modal de filtros;
+- app 100% funcional e offline, pronto para demonstração.
+```
+
+## Comando para fazer o commit:
+
+```bash
+git add commit-4/
+git commit -m "feat: entregar interface mobile completa com telas, componentes e roteamento"
+```

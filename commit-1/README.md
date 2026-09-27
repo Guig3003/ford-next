@@ -1,14 +1,16 @@
-# Commit 1 — base do risco e da jornada de ação
+# Commit 1 — Configuração, dependências e setup do projeto
 
-Arquivos incluídos neste pacote:
-- backend/requirements.txt
-- backend/src/domain/action_rules.py
-- backend/src/domain/message_templates.py
-- backend/src/domain/prioritization.py
-- backend/src/domain/risk_label.py
+## Objetivo
+Estabelecer a base do projeto mobile com todas as dependências necessárias e configurações iniciais do Expo.
 
-Objetivo:
-- estabelecer a base da arquitetura do backend;
-- definir a regra de risco do veículo;
-- mapear ações recomendadas para o cliente;
-- explicar a lógica de priorização de contatos.
+## Arquivos incluídos
+- `package.json` — dependências do React Native, Expo e ferramentas
+- `package-lock.json` — lock das dependências
+- `app.json` — configuração do Expo (nome, versão, ícone, plataformas)
+- `eas.json` — configuração para build do APK via EAS
+- `eslint.config.js` — linter para o projeto
+- `tsconfig.json` — configuração TypeScript
+- `.gitignore` — arquivos a ignorar no versionamento
+
+## Próximos passos
+Após este commit, o projeto estará pronto para `npm install` e desenvolvimento.
