@@ -1,0 +1,60 @@
+.pagina {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #13233a;
+}
+
+.cabecalho {
+  padding: 24px;
+  background: linear-gradient(135deg, #1d4e89, #0b1d2f);
+  color: white;
+}
+
+.cabecalho-titulo {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cabecalho-subtitulo {
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.conteudo {
+  padding: 24px;
+}
+
+.secao {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.secao-titulo {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.tabela-wrap {
+  overflow-x: auto;
+}
+
+.tabela-leads {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-leads th,
+.tabela-leads td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
